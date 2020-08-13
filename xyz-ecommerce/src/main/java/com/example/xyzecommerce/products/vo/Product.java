@@ -17,6 +17,7 @@ import javax.persistence.Id;
 public class Product {
     private @Id @GeneratedValue Long id;
     private String name;
+    private String price;
     private String imageLocation;
 
     public Long getId() {
@@ -37,5 +38,13 @@ public class Product {
 
     public void setImageLocation(String imageLocation) {
         this.imageLocation = imageLocation;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 }

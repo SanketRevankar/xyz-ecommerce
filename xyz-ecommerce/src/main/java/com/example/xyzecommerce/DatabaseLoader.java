@@ -35,8 +35,9 @@ public class DatabaseLoader implements CommandLineRunner {
         this.cartRepository.save(cart);
 
         Product product = new Product();
-        product.setName("item");
-        product.setImageLocation("loc");
+        product.setName("Lenovo Legion Y540");
+        product.setPrice("63,990.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pl1o7uQ3L._SL1500_.jpg");
         this.productRepository.save(product);
 
         CartItem cartItem = new CartItem();
@@ -47,8 +48,9 @@ public class DatabaseLoader implements CommandLineRunner {
         cart.getCartItems().add(cartItem);
 
         product = new Product();
-        product.setName("item1");
-        product.setImageLocation("loc1");
+        product.setName("HP Pavilion Gaming DK0268TX");
+        product.setPrice("67,990.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
         this.productRepository.save(product);
 
         cartItem = new CartItem();
@@ -59,6 +61,36 @@ public class DatabaseLoader implements CommandLineRunner {
         cart.getCartItems().add(cartItem);
 
         this.cartRepository.save(cart);
+
+        product = new Product();
+        product.setName("HP Pavilion Gaming DK0268TX");
+        product.setPrice("67,990.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        this.productRepository.save(product);
+
+        product = new Product();
+        product.setName("HP Pavilion Gaming DK0268TX");
+        product.setPrice("67,990.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        this.productRepository.save(product);
+
+        product = new Product();
+        product.setName("HP Pavilion Gaming DK0268TX");
+        product.setPrice("67,990.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        this.productRepository.save(product);
+
+        product = new Product();
+        product.setName("HP Pavilion Gaming DK0268TX");
+        product.setPrice("67,990.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        this.productRepository.save(product);
+
+        product = new Product();
+        product.setName("HP Pavilion Gaming DK0268TX");
+        product.setPrice("67,990.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        this.productRepository.save(product);
 
     }
 
