@@ -44,6 +44,8 @@ class App extends React.Component<{}, any> {
     public render() {
         const dataProduct = { 'products': this.state.products, 'cartItems': this.state.cartItems, 'updateCart': this.updateCart, "addToNewCart": this.addToNewCart }
         const dataCart = { 'cartItems': this.state.cartItems, 'updateCart': this.updateCart }
+        let totalCart = 0;
+        this.state.cartItems.map((product: any) => { totalCart += product.quantity });
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -53,7 +55,7 @@ class App extends React.Component<{}, any> {
                         <span className="navbar-toggler-icon" />
                     </button>
                     <a href="#" className="navbar-item ml-auto text-dark text-decoration-none" onClick={this.showHome}>Home</a>
-                    <button className="navbar-item btn border-dark ml-3 mr-3" onClick={this.showCart}>Cart <span className="badge badge-dark">{this.state.cartItems.length}</span></button>
+                    <button className="navbar-item btn border-dark ml-3 mr-3" onClick={this.showCart}>Cart <span className="badge badge-dark">{totalCart}</span></button>
                 </nav>
                 {this.state.cart ?
                     <div className='container' style={{ marginTop: "10vh" }} >

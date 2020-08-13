@@ -43,7 +43,7 @@ public class DatabaseLoader implements CommandLineRunner {
         CartItem cartItem = new CartItem();
         cartItem.setMasterCart(cart);
         cartItem.setProduct(product);
-        cartItem.setQuantity(4L);
+        cartItem.setQuantity(1L);
         this.cartItemRepository.save(cartItem);
         cart.getCartItems().add(cartItem);
 
@@ -56,40 +56,40 @@ public class DatabaseLoader implements CommandLineRunner {
         cartItem = new CartItem();
         cartItem.setMasterCart(cart);
         cartItem.setProduct(product);
-        cartItem.setQuantity(4L);
+        cartItem.setQuantity(1L);
         this.cartItemRepository.save(cartItem);
         cart.getCartItems().add(cartItem);
 
         this.cartRepository.save(cart);
 
         product = new Product();
-        product.setName("HP Pavilion Gaming DK0268TX");
-        product.setPrice("67,990.00");
-        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        product.setName("Razer DeathAdder Elite");
+        product.setPrice("11,299.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/71-QPWNH%2BVL._SL1500_.jpg");
         this.productRepository.save(product);
 
         product = new Product();
-        product.setName("HP Pavilion Gaming DK0268TX");
-        product.setPrice("67,990.00");
-        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        product.setName("Razer BlackWidow Elite");
+        product.setPrice("19,499.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/71Pkf3taxkL._SL1500_.jpg");
         this.productRepository.save(product);
 
         product = new Product();
-        product.setName("HP Pavilion Gaming DK0268TX");
-        product.setPrice("67,990.00");
-        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        product.setName("GALAX GeForce RTX 2060");
+        product.setPrice("36,999.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/41UxI9tkAcL.jpg");
         this.productRepository.save(product);
 
         product = new Product();
-        product.setName("HP Pavilion Gaming DK0268TX");
-        product.setPrice("67,990.00");
-        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        product.setName("Xbox One S");
+        product.setPrice("30,990.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/71O8ny4kHFL._SL1500_.jpg");
         this.productRepository.save(product);
 
         product = new Product();
-        product.setName("HP Pavilion Gaming DK0268TX");
-        product.setPrice("67,990.00");
-        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg");
+        product.setName("Sony PS4");
+        product.setPrice("44,999.00");
+        product.setImageLocation("https://images-na.ssl-images-amazon.com/images/I/61fZimYlaIL._SL1500_.jpg");
         this.productRepository.save(product);
 
     }
